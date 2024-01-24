@@ -26,7 +26,7 @@ class AddNotesButtom extends StatelessWidget {
               maxlines: 5,
             ),
             SizedBox(
-              height: 150,
+              height: 32,
             ),
             CustomButtom(),
             SizedBox(
