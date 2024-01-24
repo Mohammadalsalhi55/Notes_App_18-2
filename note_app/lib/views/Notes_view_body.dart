@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/views/Custom_AppBar.dart';
+import 'package:note_app/views/Custom_item.dart';
 
 // ignore: camel_case_types
 class notes_view_body extends StatelessWidget {
@@ -7,13 +8,17 @@ class notes_view_body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        SizedBox(
-          height: 50,
-        ),
-        CustomAppBar(),
-      ],
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 24),
+      child: Column(
+        children: [
+          SizedBox(
+            height: 50,
+          ),
+          CustomAppBar(),
+          Noteitems(),
+        ],
+      ),
     );
   }
 }
