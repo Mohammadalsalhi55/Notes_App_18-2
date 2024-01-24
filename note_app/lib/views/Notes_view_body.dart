@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/views/Custom_AppBar.dart';
-import 'package:note_app/views/Custom_item.dart';
+import 'package:note_app/views/Custom_list_view.dart';
 
 // ignore: camel_case_types
 class notes_view_body extends StatelessWidget {
@@ -16,7 +16,7 @@ class notes_view_body extends StatelessWidget {
             height: 50,
           ),
           CustomAppBar(),
-          Noteitems(),
+          Expanded(child: NoteListView()),
         ],
       ),
     );
