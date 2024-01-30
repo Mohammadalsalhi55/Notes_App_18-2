@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:note_app/views/edit_new_view.dart';
+import 'package:note_app/views/edit_note.dart';
 
 class Noteitems extends StatelessWidget {
   const Noteitems({super.key});
@@ -12,7 +12,7 @@ class Noteitems extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return const Editnewview();
+          return const EditNote();
         }));
       },
       child: Container(
