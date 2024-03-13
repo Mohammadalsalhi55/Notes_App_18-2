@@ -29,7 +29,7 @@ class _AddnoteFormState extends State<AddnoteForm> {
       autovalidateMode: autovalidateMode,
       child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 32,
           ),
           CustomTextField(
@@ -47,6 +47,9 @@ class _AddnoteFormState extends State<AddnoteForm> {
             },
             hint: 'Content',
             maxlines: 5,
+          ),
+          const SizedBox(
+            height: 32,
           ),
           const ColorsListView(),
           const SizedBox(
@@ -76,7 +79,7 @@ class _AddnoteFormState extends State<AddnoteForm> {
               );
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
         ],
