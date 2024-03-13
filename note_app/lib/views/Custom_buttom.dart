@@ -27,7 +27,7 @@ class CustomButtom extends StatelessWidget {
                 : const Text(
                     "Add",
                     style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
                   )),

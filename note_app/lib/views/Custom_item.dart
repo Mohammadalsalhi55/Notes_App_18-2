@@ -24,14 +24,14 @@ class Noteitems extends StatelessWidget {
           ListTile(
             title: Text(
               note.title,
-              style: const TextStyle(color: Colors.black, fontSize: 26),
+              style: const TextStyle(color: Colors.white, fontSize: 26),
             ),
             subtitle: Padding(
               padding: const EdgeInsets.only(top: 16, bottom: 16),
               child: Text(
                 note.subTitle,
                 style: TextStyle(
-                    color: Colors.black.withOpacity(.5), fontSize: 18),
+                    color: Colors.white.withOpacity(.5), fontSize: 18),
               ),
             ),
             trailing: IconButton(
@@ -42,7 +42,7 @@ class Noteitems extends StatelessWidget {
               icon: const Icon(
                 FontAwesomeIcons.trash,
                 size: 24,
-                color: Colors.black,
+                color: Colors.white,
               ),
             ),
           ),
@@ -51,7 +51,7 @@ class Noteitems extends StatelessWidget {
             child: Text(
               note.date,
               style:
-                  TextStyle(color: Colors.black.withOpacity(.4), fontSize: 14),
+                  TextStyle(color: Colors.white.withOpacity(.4), fontSize: 14),
             ),
           ),
         ]),
